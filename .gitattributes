@@ -1,0 +1,4 @@
+# CODESYS project files are binary
+*.project binary
+*.library binary
+*.compiled-library binary

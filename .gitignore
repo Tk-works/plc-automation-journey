@@ -1,0 +1,29 @@
+# CODESYS generated / user-specific files (keep *.project)
+*.~u
+*.compileinfo
+*.bootinfo
+*.bootinfo_guids
+*.opt
+*.precompilecache
+*.app
+*.crc
+*.backup
+*.project.bak
+
+# OpenPLC build output
+build/
+*.st.bak
+
+# PlatformIO / STM32 / IDEs
+.pio/
+.vscode/
+Debug/
+Release/
+*.o
+*.elf
+*.map
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
