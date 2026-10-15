@@ -11,7 +11,7 @@ Rule: write the prediction **before** testing in CODESYS. Keep wrong answers; th
 The contact is changed to NC (`-|/|-`). What is `Lamp` when PB\_Start = FALSE? When PB\_Start = TRUE?
 
 * **My prediction:** When NC PB\_Start = False Lamp is ON, when PB\_Start = TRUE Lamp is OFF. 
-* **Observed:**
+* **Observed: Same as observation.** 
 * **Correct reasoning (after review):**
 
 ### Q2 — Duplicate coil
@@ -19,7 +19,7 @@ The contact is changed to NC (`-|/|-`). What is `Lamp` when PB\_Start = FALSE? W
 Rung 1: `PB\_Start` NO → `Lamp`. Rung 2: `PB\_Start` NC → `Lamp`. With PB\_Start = TRUE, what does the lamp do, and why?
 
 * **My predictio**n: Keeps value set by the latest rung. In this case Rung 2 which produces Lamp OFF.
-* **Observed:**
+* **Observed: When duplicated Lamp looks off for both networks.** 
 * **Correct reasoning (after review):**
 
 ### Q3 — PLC in STOP
@@ -27,7 +27,7 @@ Rung 1: `PB\_Start` NO → `Lamp`. Rung 2: `PB\_Start` NC → `Lamp`. With PB\_S
 Test case 5: the PLC is stopped and then PB\_Start is written TRUE. What happens to `Lamp`, and what does that show?
 
 * **My prediction: I think Lamp stays in the state it was when it is stopped. This shows that the development environment does nit affect the run time when it is disconnected.** 
-* **Observed:**
+* **Observed: The lamp does not change when PLC is stopped.** 
 * **Correct reasoning (after review):**
 
 ### Q4 — Short pulses
